@@ -1,0 +1,3 @@
+[submodule "demo_backend"]
+	path = demo/backend
+	url = git@github.com:aiokaizen/ocg_demo_backend.git
