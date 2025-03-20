@@ -9,10 +9,33 @@ license = {text = "Apache-2.0"}
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "typer (>=0.15.2,<0.16.0)"
+    "typer (>=0.15.2,<0.16.0)",
+    "pylibutils (>=0.1.0,<0.2.0)"
 ]
+
+[tool.poetry]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    # "Development Status :: 5 - Production/Stable",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS :: MacOS X",
+    "License :: OSI Approved :: Apache Software License",
+]
+
+[project.scripts]
+ocg = "ocg.run:app"
+
+
+[tool.poetry.group.dev.dependencies]
+build = "^1.2.2.post1"
+black = "^25.1.0"
+twine = "^6.1.0"
 
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+
